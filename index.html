@@ -16,6 +16,24 @@
 </a>
 <img src="https://i1.sndcdn.com/avatars-nPKuzcpt7FO3IOkc-AkKSRw-t500x500.jpg" width="200">
 <img src="https://www.mypokecard.com/en/Gallery/my/galery/2wortSYUiM2Y.jpg" width="200">
+ <button class="btn btn-danger" onclick="openPopup()"> </button>
+
+<script> 
+var newWin;
+    function openPopup()
+    {
+     newWin= window.open('https://www.garfield.com','Garfield Site','width=800,height=500');
+
+     document.onmousedown=focusPopup;
+     document.onkeyup=focusPopup;
+     document.onmousemove=focusPopup;
+    }
+    function focusPopup(){
+      if(!newWin.closed){
+        newWin.focus();
+      }
+    }
+ </script>
 <p>please dont sue me jim davis</p>
 </body>
 </html>
